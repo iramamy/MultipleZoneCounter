@@ -96,3 +96,12 @@ out.release()
 cap.release()
 cv2.destroyAllWindows()
 ```
+
+## 🏷️ Tags:
+- Ultralytics
+- Computer vision
+- Object tracking
+- OpenCV
+- Real-time Tracking
+- Machine Learning
+- Image Analysis
