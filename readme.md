@@ -1,35 +1,39 @@
-# Object Counting in Multiple Zones
+# 📊 Object Counting in Multiple Zones 🏷️
 
-## Introduction
-This project showcases the application of object detection and counting using the Ultralytics YOLOv8 model in multiple predefined regions of a video. The primary objective is to demonstrate the capability to detect and count objects within specific zones of interest, which can be particularly useful in various applications like traffic monitoring, crowd management, and industrial automation.
+## 🌟 Introduction
+This project showcases the application of object detection and counting using the **Ultralytics YOLOv8** model in multiple predefined regions of a video. The primary objective is to demonstrate the capability to detect and count objects within specific zones of interest, which can be particularly useful in various applications like traffic monitoring, crowd management, and industrial automation.
 
-## Model
+## 🛠️ Tools
+- **[Polygonezone](https://roboflow.github.io/polygonzone/)**: Tool to draw the region(s) of interest.
+
+## 🔍 Model
 **Ultralytics YOLOv8**
 - YOLO (You Only Look Once) is a state-of-the-art, real-time object detection system.
 - The YOLOv8 model utilized in this project is a segmentation variant, pre-trained on a vast dataset to accurately detect and segment objects in diverse environments.
 
 ![Detection Example](./image.jpg)
 
-## Methodology
+## 🧩 Methodology
 ### Steps Involved:
-1. **Model Loading**: The YOLOv8 model is loaded for object detection and segmentation.
-2. **Video Capture**: A video is read frame by frame for processing.
-3. **Zone Definition**: Multiple zones of interest are defined as polygons within the video frame where object counting is performed.
-4. **Object Detection and Tracking**: Objects within the frame are detected and tracked across frames.
-5. **Object Counting**: Objects entering the defined zones are counted separately for each zone.
+1. **🔄 Model Loading**: The YOLOv8 model is loaded for object detection and segmentation.
+2. **📹 Video Capture**: A video is read frame by frame for processing.
+3. **✏️ Zone Definition**: Multiple zones of interest are defined as polygons within the video frame where object counting is performed.
+4. **🔍 Object Detection and Tracking**: Objects within the frame are detected and tracked across frames.
+5. **🔢 Object Counting**: Objects entering the defined zones are counted separately for each zone.
 
 ### Key Components:
 - **YOLOv8 Model**: Utilized for high-precision object detection.
 - **Multiple Zones**: Allows counting objects in different predefined regions.
 - **ObjectCounter**: Custom solution leveraging YOLOv8 for counting objects within specified regions.
 
-## Implementation
+## 🚀 Implementation
 
-### Dependencies
+### 📦 Dependencies
 To run the project, ensure you have the following dependencies installed:
-- OpenCV
-- Ultralytics YOLO
-- Shapely (for handling geometric shapes)
+- **OpenCV**
+- **Ultralytics YOLO**
+- **Shapely** (for handling geometric shapes)
+
 
 ### Code Example
 Here's a snippet of the main code used for object detection and counting in multiple zones:
@@ -91,3 +95,4 @@ while True:
 out.release()
 cap.release()
 cv2.destroyAllWindows()
+```
